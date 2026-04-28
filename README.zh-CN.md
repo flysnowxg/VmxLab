@@ -1,3 +1,5 @@
+[English](./README.md) | [中文](./README.zh-CN.md)
+
 # VmxLab
 
 一个极简的 Windows x64 内核驱动，用于学习 Intel VT-x / VMX 虚拟化技术。

@@ -1,3 +1,5 @@
+[English](./README.md) | [中文](./README.zh-CN.md)
+
 # VmxLab
 
 A minimal Windows x64 kernel driver for learning Intel VT-x / VMX virtualization.

@@ -1,8 +1,14 @@
-[English](./README.md) | [中文](./README.zh-CN.md)
-
 # VmxLab
 
-一个极简的 Windows x64 内核驱动，用于学习 Intel VT-x / VMX 虚拟化技术。
+- 一个极简的 Windows x64 内核驱动，用于学习 Intel VT-x / VMX 虚拟化技术。
+- 本项目实现的功能是：
+- 通过windows驱动从系统内核通过vt-x 技术进入客户机状态。然后在客户机中计算3次加法
+- 第1次进入客户机时计算 用户通过 VmxLabClient.exe 命令行传入的的两个整数之和
+- 第2次进入客户机时 将上一步的计算结果再加1
+- 第3次进入客户机时 将上一步的计算结果再次加1
+- 然后销毁客户机配置,退出虚拟化环境
+- 然后将计算结果返回给VmxLabClient.exe 
+
 
 ## 项目特点
 

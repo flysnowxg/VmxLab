@@ -2,7 +2,15 @@
 
 # VmxLab
 
-A minimal Windows x64 kernel driver for learning Intel VT-x / VMX virtualization.
+- A minimal Windows x64 kernel driver for learning Intel VT-x / VMX virtualization.
+- The functionalities implemented in this project are:
+- Use a Windows driver from kernel mode into guest state via VT-x technology.
+- Then perform three addition operations inside the guest:
+- On the first entry into the guest, calculate the sum of two integers passed via the command line of VmxLabClient.exe.
+- On the second entry into the guest, add 1 to the result obtained from the previous step.
+- On the third entry into the guest, add 1 again to the result from the previous step.
+- Then destroy the guest configuration and exit the virtualization environment.
+- Finally, return the computed result to VmxLabClient.exe.
 
 ## Highlights
 
